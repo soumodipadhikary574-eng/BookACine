@@ -1,0 +1,123 @@
+/* Full page white background with subtle gradient */
+.admin-upload-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9fafc 0%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glassmorphism style card */
+.upload-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px 45px;
+  border-radius: 16px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(31, 58, 147, 0.15);
+  border: 1px solid rgba(31, 58, 147, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.upload-card:hover {
+  box-shadow: 0 12px 40px rgba(31, 58, 147, 0.25);
+}
+
+/* Title */
+.upload-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f3a93;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+
+/* Form layout */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input labels */
+.file-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3a3f58;
+  margin-bottom: 8px;
+  user-select: none;
+}
+
+/* Input fields styling */
+.upload-input,
+.upload-file {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1.8px solid #d1d9f0;
+  background-color: #f7f9ff;
+  color: #2c3e8f;
+  box-sizing: border-box;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.upload-input::placeholder {
+  color: #7b85b3;
+  font-weight: 400;
+}
+
+.upload-input:focus,
+.upload-file:focus {
+  border-color: #1f3a93;
+  box-shadow: 0 0 8px rgba(31, 58, 147, 0.4);
+  outline: none;
+}
+
+/* Submit button - gradient and shadow */
+.upload-button {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, #1f3a93 0%, #4266d1 100%);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(31, 58, 147, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.upload-button:hover {
+  background: linear-gradient(90deg, #16307a 0%, #3754b0 100%);
+  box-shadow: 0 8px 22px rgba(31, 58, 147, 0.6);
+}
+
+/* Back button - simple text with subtle hover color */
+.back-button {
+  margin-top: 22px;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  color: #1f3a93;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+
+.back-button:hover {
+  color: #3754b0;
+}

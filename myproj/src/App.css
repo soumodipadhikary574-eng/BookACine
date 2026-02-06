@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 40px; /* space between left and right */
+  box-sizing: border-box;
+}
+
+.left {
+  width: 65%;
+  position: sticky;
+  top: 0;
+}
+
+.right {
+  width: 30%;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 45%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.image {
+  font-size: 36px;
+}
+
+.info h4 {
+  margin: 0 0 6px;
+}
+
+.add,
+.qty-control button {
+  background-color: #f84464;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.qty-control span {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #f84464;
+}
+
+.right h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.right p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.right .line {
+  border-top: 1px dashed #ccc;
+  margin: 12px 0;
+}
+
+.checkbox-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 13px;
+  color: gray;
+}
+.proceed-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background-color: #f84464;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.proceed-btn:hover {
+  background-color: #d73859;
+}
